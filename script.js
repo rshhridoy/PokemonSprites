@@ -2,10 +2,13 @@
 const fetchdata = async () => {
     try{
         const input = document.getElementById("pokemonName").value.toLowerCase();
+        const notFound = document.getElementById("notFound");
         const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${input}`);
-    
+        
         if(!response.ok){
-            throw new Error("Couldn't fetch Resource")
+            notFound.style.visibility = "visible";
+            notFound.innerText = `There is no Pokémon named "${input}"`;
+            throw new Error("No Pokemon in this name")
         }else{
             const data = await response.json();
             

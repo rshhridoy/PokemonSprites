@@ -17,6 +17,10 @@ body{
     border-radius: 10px;
 }
 
+h1{
+    color: white;
+}
+
 #btn{
     font-size: 20px;
     font-weight: bold;
@@ -42,5 +46,10 @@ body{
     visibility: hidden;
     height: 250px;
     width: 250px;
+}
+
+#notFound{
+    color: white;
+    visibility: hidden;
 }
 
