@@ -13,13 +13,18 @@ const fetchdata = async () => {
             const data = await response.json();
             console.log(data)
             
+
+            //image
             const pokemonSprite = data.sprites.front_default;
             const pokemoniImg = document.getElementById("pokemonSprite");
             pokemoniImg.src = pokemonSprite;
             pokemoniImg.style.visibility = "visible";
+
+            //type
             const pokemonType = data.types[0].type.name;
             const type = document.getElementById("type");
             type.textContent = `Type: ${pokemonType}`;
+            type.style.visibility = "visible";
         }
     }
     catch(error){

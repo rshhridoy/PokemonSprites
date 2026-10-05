@@ -44,8 +44,8 @@ h1{
 
 #pokemonSprite{
     visibility: hidden;
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
 }
 
 #notFound{
@@ -59,7 +59,8 @@ h1{
     font-size: 18px;
     color:white;
     background-color: hsl(0, 94%, 41%);
-    padding: 14px;
+    padding: 5px;
     border-radius: 10px;
+    visibility: hidden;
 }
 
