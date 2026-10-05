@@ -39,7 +39,8 @@ body{
 }
 
 #pokemonSprite{
-    display: none;
+    visibility: hidden;
     height: 250px;
     width: 250px;
 }
+
