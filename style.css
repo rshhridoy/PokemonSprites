@@ -53,3 +53,13 @@ h1{
     visibility: hidden;
 }
 
+
+#type{
+    font-weight: bold;
+    font-size: 18px;
+    color:white;
+    background-color: hsl(0, 94%, 41%);
+    padding: 14px;
+    border-radius: 10px;
+}
+
